@@ -76,9 +76,6 @@
   - 값: `[None, 10, 20, 30]`
 - **min_samples_leaf**: 리프 노드에 있어야 할 최소 샘플 수  
   - 값: `[2, 5, 10]`  
-    - `'n_estimators'`: `[100, 300, 500]`  
-    - `'max_depth'`: `[None, 10, 20, 30]`  
-    - `'min_samples_leaf'`: `[2, 5, 10]`
 
 ### 3. XGBClassifier
 - **n_estimators**: 부스팅 반복 횟수  
@@ -86,10 +83,6 @@
 - **num_leaves**: 리프 노드 수  
   - 값: `[31, 63, 127]`
 - **learning_rate**: 학습률  
-  - 값: `[0.01, 0.1, 0.2]`  
-    - `'n_estimators'`: `[100, 300, 500]`  
-    - `'num_leaves'`: `[31, 63, 127]`  
-    - `'learning_rate'`: `[0.01, 0.1, 0.2]`
 
 ### 4. LGBMClassifier
 - **n_estimators**: 부스팅 반복 횟수  
@@ -97,10 +90,7 @@
 - **max_depth**: 최대 트리 깊이  
   - 값: `[None, 10, 20, 30]`
 - **min_samples_leaf**: 리프 노드에 있어야 할 최소 샘플 수  
-  - 값: `[2, 5, 10]`  
-    - `'n_estimators'`: `[100, 300, 500]`  
-    - `'max_depth'`: `[None, 10, 20, 30]`  
-    - `'min_samples_leaf'`: `[2, 5, 10]`
+  - 값: `[2, 5, 10]`
 
 ---
 
