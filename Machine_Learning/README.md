@@ -114,8 +114,8 @@
 | RandomForestClassifier | 0.99 | 0.80 |
 | XGBClassifier | 0.99 | 0.81 |
 | LGBMClassifier | 0.99 | 0.82 |
-![전국 단위 ROC-AUC](./images/national_ROC.png)
-![지역 단위 ROC-AUC](./images/local_ROC.png)
+
+![전국 단위 ROC-AUC](./images/national_ROC.png) ![지역 단위 ROC-AUC](./images/local_ROC.png)
 
 ### 정밀도, 재현율, PR-AUC
 
@@ -125,8 +125,8 @@
 | RandomForestClassifier | 0.08 | 0.03 | 0.03 |
 | XGBClassifier | 0.11 | 0.01 | 0.04 |
 | LGBMClassifier | 0.03 | 0.002 | 0.04 |
-![전국 단위 PR-AUC](./images/national_PR.png)
-![지역 단위 PR-AUC](./images/local_PR.png)
+
+![전국 단위 PR-AUC](./images/national_PR.png) ![지역 단위 PR-AUC](./images/local_PR.png)
 
 > 정확도는 높지만 정밀도와 재현율이 매우 낮은 것을 확인할 수 있었습니다. 이는 **심각한 클래스 불균형**과 관련이 있습니다.
 
