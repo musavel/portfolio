@@ -30,7 +30,7 @@
 ![연도·월별 산불 발생 히트맵](./images/heatmap_by_month.png)
 
 또한 지역별 산불 발생 현황을 살펴보기 위해 시/도 단위로 데이터를 집계하고, 이를 연도별로 나누어 Heatmap으로 표현하였습니다. 이를 통해 특정 지역에서 산불 발생 빈도가 높은지 여부를 확인할 수 있었습니다.
-![연도·지역별 산불 발생 히트맵](./images/heatmap_by_month.png)
+![연도·지역별 산불 발생 히트맵](./images/heatmap_by_region.png)
 
 추가적으로, 전체 수집 기간 동안의 월별 산불 발생 건수와 지역별 발생 건수를 각각 Bar Plot으로 시각화하여 산불이 자주 발생하는 시기와 지역을 직관적으로 파악할 수 있도록 하였습니다.
 ![전체 기간 내 산불 발생 통계](./images/barplots.png)
@@ -114,6 +114,8 @@
 | RandomForestClassifier | 0.99 | 0.80 |
 | XGBClassifier | 0.99 | 0.81 |
 | LGBMClassifier | 0.99 | 0.82 |
+![전국 단위 ROC-AUC](./images/national_ROC.png)
+![지역 단위 ROC-AUC](./images/local_ROC.png)
 
 ### 정밀도, 재현율, PR-AUC
 
@@ -123,6 +125,8 @@
 | RandomForestClassifier | 0.08 | 0.03 | 0.03 |
 | XGBClassifier | 0.11 | 0.01 | 0.04 |
 | LGBMClassifier | 0.03 | 0.002 | 0.04 |
+![전국 단위 PR-AUC](./images/national_PR.png)
+![지역 단위 PR-AUC](./images/local_PR.png)
 
 > 정확도는 높지만 정밀도와 재현율이 매우 낮은 것을 확인할 수 있었습니다. 이는 **심각한 클래스 불균형**과 관련이 있습니다.
 
