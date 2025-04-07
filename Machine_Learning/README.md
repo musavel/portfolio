@@ -107,26 +107,38 @@
 ## 모델 평가 결과
 
 ### 전체 정확도 및 ROC-AUC
+<div style="display: flex; align-items: center;">
+  <div>
+  
+  | 모델 | Accuracy | ROC-AUC |
+  |------|----------|---------|
+  | LogisticRegression | 0.72 | 0.83 |
+  | RandomForestClassifier | 0.99 | 0.80 |
+  | XGBClassifier | 0.99 | 0.81 |
+  | LGBMClassifier | 0.99 | 0.82 |
+  
+  </div>
+  <img src="./images/national_ROC.png" alt="전국 단위 ROC-AUC" width="400" style="margin-left: 20px;">
+</div>
 
-| 모델 | Accuracy | ROC-AUC |
-|------|----------|---------|
-| LogisticRegression | 0.72 | 0.83 |
-| RandomForestClassifier | 0.99 | 0.80 |
-| XGBClassifier | 0.99 | 0.81 |
-| LGBMClassifier | 0.99 | 0.82 |
-
-![전국 단위 ROC-AUC](./images/national_ROC.png) ![지역 단위 ROC-AUC](./images/local_ROC.png)
+![지역 단위 ROC-AUC](./images/local_ROC.png)
 
 ### 정밀도, 재현율, PR-AUC
+<div style="display: flex; align-items: center;">
+  <div>
+  
+  | 모델 | Precision | Recall | PR-AUC |
+  |------|-----------|--------|--------|
+  | LogisticRegression | 0.02 | 0.78 | 0.04 |
+  | RandomForestClassifier | 0.08 | 0.03 | 0.03 |
+  | XGBClassifier | 0.11 | 0.01 | 0.04 |
+  | LGBMClassifier | 0.03 | 0.002 | 0.04 |
+  
+  </div>
+  <img src="./images/national_PR.png" alt="전국 단위 PR-AUC" width="400" style="margin-left: 20px;">
+</div>
 
-| 모델 | Precision | Recall | PR-AUC |
-|------|-----------|--------|--------|
-| LogisticRegression | 0.02 | 0.78 | 0.04 |
-| RandomForestClassifier | 0.08 | 0.03 | 0.03 |
-| XGBClassifier | 0.11 | 0.01 | 0.04 |
-| LGBMClassifier | 0.03 | 0.002 | 0.04 |
-
-![전국 단위 PR-AUC](./images/national_PR.png) ![지역 단위 PR-AUC](./images/local_PR.png)
+![지역 단위 PR-AUC](./images/local_PR.png)
 
 > 정확도는 높지만 정밀도와 재현율이 매우 낮은 것을 확인할 수 있었습니다. 이는 **심각한 클래스 불균형**과 관련이 있습니다.
 
