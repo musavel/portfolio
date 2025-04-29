@@ -1,0 +1,15 @@
+{
+    "base": {
+        "yolo11n": "model/base/yolo11n.pt",
+        "yolo11s": "model/base/yolo11s.pt",
+        "yolo11m": "model/base/yolo11m.pt",
+        "yolo11l": "model/base/yolo11l.pt",
+        "yolo11x": "model/base/yolo11x.pt"
+    },
+    "trained": {
+        "Male": "model/Male/result_epoch30_imgsz1280/weights/best.pt",
+        "Female": "model/Female/result_epoch30_imgsz1280/weights/best.pt",
+        "House": "model/House/result_epoch30_imgsz1280/weights/best.pt",
+        "Tree": "model/Tree/result_epoch30_imgsz1280/weights/best.pt"
+    }
+}
