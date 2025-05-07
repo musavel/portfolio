@@ -42,7 +42,7 @@
 ---
 
 ## 기술 스택
-![기술 아키텍쳐](./captures/Architecture.jpg)
+![기술 아키텍쳐](./captures/Architecture.png)
 
 | 분류           | 기술 상세                           |
 |----------------|-------------------------------------|
@@ -59,7 +59,7 @@
 ## 시스템 구조 요약
 
 ### 기업 회원 흐름
-![기업 서비스 플로우](./captures/Company.jpg)
+![기업 서비스 플로우](./captures/Company.png)
 
 1. 포지션, 경력 입력
 ![기업: 직무 기술서 생성 초기 화면](./captures/Company1.jpg)
@@ -70,7 +70,7 @@
 ![기업: 추천 면접 질문 생성 결과](./captures/Company3.jpg)
 
 ### 개인 회원 흐름
-![개인 서비스 플로우](./captures/Personal.jpg)
+![개인 서비스 플로우](./captures/Personal.png)
 
 1. 포지션, 연차 입력
 ![개인: 가상 면접 챗봇 초기 화면](./captures/Personal1.jpg)
