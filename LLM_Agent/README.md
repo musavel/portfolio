@@ -1,5 +1,6 @@
 
 # LLM 기반 구인·구직 AI 에이전트
+![Prompti Logo](./frontend/prompti_neon.png)
 
 본 프로젝트는 OpenAI API를 기반으로 한 구인·구직 AI 에이전트로, **기업 회원**과 **개인 회원**에게 맞춤형 채용 및 면접 기능을 제공합니다.
 
@@ -34,7 +35,14 @@
 
 ---
 
+## 추가 고려 사항
+
+- 프로젝트 초기에 **OpenAI의 Embedding 모델**을 사용했으나, **토큰 비용 절감을 위해 KoSimCSE(Hugging Face)** 모델로 교체하여 운영비용을 최적화함
+
+---
+
 ## 기술 스택
+![기술 아키텍쳐](./captures/Architecture.jpg)
 
 | 분류           | 기술 상세                           |
 |----------------|-------------------------------------|
@@ -51,31 +59,34 @@
 ## 시스템 구조 요약
 
 ### 기업 회원 흐름
+![기업 서비스 플로우](./captures/Company.jpg)
+
 1. 포지션, 경력 입력
-![기업: 직무 기술서 생성 초기 화면](./Company1.jpg)
+![기업: 직무 기술서 생성 초기 화면](./captures/Company1.jpg)
 2. LangChain Prompt + ChromaDB를 활용한 JD 자동 생성
-![기업: 직무 기술서 생성 결과](./Company2.jpg)
+![기업: 직무 기술서 생성 결과](./captures/Company2.jpg)
 3. JD 확인 및 수정, 저장
 4. 면접 질문 자동 생성 (기본 10개)
-![기업: 추천 면접 질문 생성 결과](./Company3.jpg)
+![기업: 추천 면접 질문 생성 결과](./captures/Company3.jpg)
 
 ### 개인 회원 흐름
+![개인 서비스 플로우](./captures/Personal.jpg)
+
 1. 포지션, 연차 입력
-![개인: 가상 면접 챗봇 초기 화면](./Personal1.jpg)
+![개인: 가상 면접 챗봇 초기 화면](./captures/Personal1.jpg)
 2. 사전 정의된 질문 + 꼬리 질문을 통한 채팅형 면접 시뮬레이션
-![개인: 가상 면접 진행 과정 1](./Personal2-1.jpg)
-![개인: 가상 면접 진행 과정 2](./Personal2-2.jpg)
+![개인: 가상 면접 진행 과정 1](./captures/Personal2-1.jpg)
+![개인: 가상 면접 진행 과정 2](./captures/Personal2-2.jpg)
 3. 면접 종료 후 피드백 + 모범 답변 제공
-![개인: 가상 면접 피드백](./Personal3-1.jpg)
-![개인: 가상 면접 모범 답변](./Personal3-2.jpg)
+![개인: 가상 면접 피드백](./captures/Personal3-1.jpg)
+![개인: 가상 면접 모범 답변](./captures/Personal3-2.jpg)
 4. 면접 기록 확인 가능 (가장 최근 기록부터 조회 가능)
-![개인: 이전 면접 기록 조회](./Personal4.jpg)
+![개인: 이전 면접 기록 조회](./captures/Personal4.jpg)
 
 ---
 
-## 프로젝트 개선점
+## 프로젝트 한계점
 
-- OpenAI의 embedding을 사용했으나, **토큰 비용을 고려해 KoSimCSE로 교체**
 - JD 및 질문/피드백 생성 등 여전히 **OpenAI API에 대한 의존** 존재
 - **동일 포지션-다른 경력** 간 질문 다양성이 부족
 - 경력자의 경우 **이력서 기반 면접 질문 자동화 기능**이 없다는 점이 아쉬움으로 남음
