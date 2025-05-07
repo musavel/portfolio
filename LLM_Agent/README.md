@@ -1,6 +1,6 @@
+![Prompti Logo](./frontend/prompti_neon.png)
 
 # LLM 기반 구인·구직 AI 에이전트
-![Prompti Logo](./frontend/prompti_neon.png)
 
 본 프로젝트는 OpenAI API를 기반으로 한 구인·구직 AI 에이전트로, **기업 회원**과 **개인 회원**에게 맞춤형 채용 및 면접 기능을 제공합니다.
 
