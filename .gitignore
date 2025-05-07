@@ -2,4 +2,6 @@
 Deep_Learning/data
 Deep_Learning/rawdata
 Deep_Learning/model/base
+LLM_Agent/storage/chat_history/*
+LLM_Agent/storage/chromadb/*
 **/.env
