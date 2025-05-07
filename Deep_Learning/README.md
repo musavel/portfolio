@@ -68,10 +68,10 @@ AI Hub에서 제공된 데이터는 **Training**, **Validation** 데이터셋만
 ![딥프린트: 초기 화면](./captures/Deeprint1.jpg)
 
 2. 선택한 테마에 맞는 이미지 업로드
-![딥프린트: 이미지 업로드](./captures/Deeprint2.jpg)
+![딥프린트: 이미지 업로드](./captures/Deeprint2_re.jpg)
 
 3. 개체 선택 (모두 선택 또는 일부 선택 가능)
-![딥프린트: 보기 모드](./captures/Deeprint3.jpg)
+![딥프린트: 보기 모드](./captures/Deeprint3_re.jpg)
 
 4. 선택한 개체만 이미지에 Bounding Box로 표시
   - 모두 보기
